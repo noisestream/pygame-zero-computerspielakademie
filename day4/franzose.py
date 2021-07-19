@@ -43,8 +43,6 @@ franzose = Actor('franzose', (WIDTH / 2, HEIGHT / 2), anchor=('center', 'bottom'
 
 baecker = Actor('baecker')
 
-print(inspect.getdoc(baecker))
-
 # Je nach Punktezahl lassen wir bis zu drei Brote erscheinen
 # Jedes Brot muss einzeln als eigenes Objekt initialisiert werden
 # Das machen wir mit einer Liste - brote[0 bis 2]
