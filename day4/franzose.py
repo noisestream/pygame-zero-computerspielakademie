@@ -113,8 +113,11 @@ def update():
     if time() > timer_now_sek + game_duration:
         game_end = True
 
+    # Hier durchlaufen wir unsere Brote-Liste und prüfen jedes einzelnen
+    # Brot, ob es den Franzosen berühert.
+    # Aber nur, wenn isDraw true ist!
     for brot in brote:
-        if franzose.colliderect(brot) and brot.isDraw == True:
+        if franzose.colliderect(brot) and brot.isDraw:
             brot.x = randint(0, WIDTH)
             brot.y = randint(0, HEIGHT)
             score += 1
